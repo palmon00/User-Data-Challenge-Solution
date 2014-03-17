@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CCUserData.h"
 
-@interface CCViewController : UIViewController
+@interface CCViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *users;
 
 @end
